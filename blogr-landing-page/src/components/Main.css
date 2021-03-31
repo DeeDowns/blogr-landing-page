@@ -1,0 +1,14 @@
+main {
+    z-index: 1;
+}
+
+.section-one {
+    /* background: url(../images/illustration-editor-desktop.svg) no-repeat center right; */
+    /* height: 100vh; */
+    width: 100%
+}
+
+.section-two {
+    background-image: linear-gradient(to right, hsl(237, 17%, 21%), hsl(237, 23%, 32%));
+
+}

@@ -1,27 +1,43 @@
 import React from 'react'
-
+import './Main.css'
+import editorSvgDesktop from '../images/illustration-editor-desktop.svg'
+import phonesSvg from '../images/illustration-phones.svg'
+import laptopSvgDesktop from '../images/illustration-laptop-desktop.svg'
 
 const Main = () => {
 
     return (
-        <div>
+        <main>
             <h3>Designed for the future</h3>
-            <div>
-                <h4>Introducing an extensible editor</h4>
-                <p>Blogr features an exceedingly intuitive interface which lets you focus on one thing: creating content. 
+            <section className='section-one'>
+                <div className='section-one-content'>
+                    <h4>Introducing an extensible editor</h4>
+                    <p>Blogr features an exceedingly intuitive interface which lets you focus on one thing: creating content. 
   The editor supports management of multiple blogs and allows easy manipulation of embeds such as images, 
   videos, and Markdown. Extensibility with plugins and themes provide easy ways to add functionality or 
   change the looks of a blog.</p>
+                </div>
                 <h4>Robust content management</h4>
                 <p>  Flexible content management enables users to easily move through posts. Increase the usability of your blog 
   by adding customized categories, sections, format, or flow. With this functionality, you’re in full control.</p>
-            </div>
-            <div>
+                <div className='section-one-img'>
+                    <img src={editorSvgDesktop} alt='editor' />
+                </div>
+            </section>
+
+            <section className='section-two'>
+                <div className='section-one-img'>
+                    <img src={phonesSvg} alt='editor' />
+                </div>
                 <h4>State of the Art Infrastructure</h4>
                 <p>  With reliability and speed in mind, worldwide data centers provide the backbone for ultra-fast connectivity. 
   This ensures your site will load instantly, no matter where your readers are, keeping your site competitive.</p>
-            </div>
-            <div>
+            </section>
+
+            <section className='section-three'>
+                <div className='section-one-img'>
+                    <img src={laptopSvgDesktop} alt='editor' />
+                </div>
                 <h4>Free, open, simple</h4>
                 <p>Blogr is a free and open source application backed by a large community of helpful developers. It supports 
   features such as code syntax highlighting, RSS feeds, social media integration, third-party commenting tools, 
@@ -29,8 +45,8 @@ const Main = () => {
                 <h4>Powerful tooling</h4>
                 <p>Batteries included. We built a simple and straightforward CLI tool that makes customization and deployment a breeze, but
   capable of producing even the most complicated sites.</p>
-            </div>
-        </div>
+            </section>
+        </main>
     )
 }
 
