@@ -1,11 +1,13 @@
 header {
     background-image: linear-gradient(to right, hsl(13, 100%, 72%), hsl(353, 100%, 62%)); 
-    z-index: -100; 
-    height: 100vh
+    height: 80vh;
+    width: 100%
 }
 
 .intro-div {
-    background: url(../images/bg-pattern-intro.svg) no-repeat fixed center;
-    height: 100vh
+    background: url(../images/bg-pattern-intro.svg) no-repeat fixed center ;
+    height: 80vh;
+    width: 100%
+    
 }
 
