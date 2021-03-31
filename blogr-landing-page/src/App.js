@@ -6,9 +6,9 @@ function App() {
   return (
     <div className="App">
      <Header/>
-      <div class="attribution">
+      <div>
         Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank" rel="noreferrer">Frontend Mentor</a>. 
-        Coded by <a href="#">Dee</a>.
+        Coded by <a href="https://github.com/DeeDowns" target='_blank' rel="noreferrer" >Dee</a>.
       </div>
     </div>
   );
