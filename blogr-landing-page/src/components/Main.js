@@ -21,16 +21,11 @@ const Main = () => {
                     <p>  Flexible content management enables users to easily move through posts. Increase the usability of your blog 
   by adding customized categories, sections, format, or flow. With this functionality, you’re in full control.</p>
                 </div>
-
-                <div className='section-one-img'>
-                    <img src={editorSvgDesktop} alt='editor' />
-                </div>
+                <img src={editorSvgDesktop} alt='editor' />
             </section>
 
             <section className='section-two'>
-                <div className='section-one-img'>
-                    <img src={phonesSvg} alt='editor' />
-                </div>
+                <img src={phonesSvg} alt='editor' />
 
                 <div className='section-two-content'>
                     <h4>State of the Art Infrastructure</h4>
@@ -40,10 +35,8 @@ const Main = () => {
             </section>
 
             <section className='section-three'>
-                <div className='section-one-img'>
-                    <img src={laptopSvgDesktop} alt='editor' />
-                </div>
-                
+                <img src={laptopSvgDesktop} alt='editor' />
+
                 <div className='section-two-content'>
                     <h4>Free, open, simple</h4>
                     <p>Blogr is a free and open source application backed by a large community of helpful developers. It supports 
