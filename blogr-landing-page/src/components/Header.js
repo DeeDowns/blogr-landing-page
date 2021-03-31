@@ -8,9 +8,8 @@ const Header = () => {
 
     return (
         <header>
-            <h1>Header</h1>
-            {/* <img src={bgPatternIntro} alt='circles and squares design'/> */}
-            <img src={blogrlogo} alt='blogr logo' style={{backgroundColor: 'red'}} />
+            <div className='intro-div'>
+            <img src={blogrlogo} alt='blogr logo' />
             <nav>
                 <label>Product</label>
                 <select>
@@ -46,6 +45,7 @@ const Header = () => {
                     <button>Start for Free</button>
                     <button>Learn More</button>
                 </div>
+            </div>
             </div>
         </header>
     )
