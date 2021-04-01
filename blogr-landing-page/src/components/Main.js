@@ -3,6 +3,7 @@ import './Main.css'
 import editorSvgDesktop from '../images/illustration-editor-desktop.svg'
 import phonesSvg from '../images/illustration-phones.svg'
 import laptopSvgDesktop from '../images/illustration-laptop-desktop.svg'
+import circles from '../images/bg-pattern-circles.svg'
 
 const Main = () => {
 
@@ -25,10 +26,11 @@ const Main = () => {
             </section>
 
             <section className='section-two'>
+                {/* <img className='circles' src={circles} alt='cirlces'/> */}
                 <img src={phonesSvg} alt='editor' />
 
                 <div className='section-two-content'>
-                    <h4>State of the Art Infrastructure</h4>
+                    <h3>State of the Art Infrastructure</h3>
                     <p>  With reliability and speed in mind, worldwide data centers provide the backbone for ultra-fast connectivity. 
   This ensures your site will load instantly, no matter where your readers are, keeping your site competitive.</p>
                 </div>
