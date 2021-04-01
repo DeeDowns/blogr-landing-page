@@ -22,7 +22,7 @@ nav {
     flex-direction: row;
     justify-content: flex-start;
     align-items: center;
-    margin: 2%;
+    margin: 2% 2% 2% 10%;
 }
 
 .dropdowns {
@@ -30,29 +30,59 @@ nav {
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
-    width: 40%;
+    width: 35%;
 }
 
-.dropdowns ul {
+.dropdown-section {
+    width: 30%;
+}
+
+
+.dropdowns p {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     justify-content: space-evenly;
     align-items: center;
     list-style: none;
-    width: 22%;
+    width: 90%;
 }
 
-.dropdowns ul:hover {
+.dropdowns p:hover {
     text-decoration: underline;
     cursor: pointer;
 }
 
-li {
-    display: none;
+p img {
+   margin-left: -10% ;
 }
 
-.dropdowns li a {
+.rotate {
+    transform: rotate(180deg);
+}
+
+.dropdowns ul {
+    background-color: hsl(0, 0%, 100%);
+    box-shadow:0 0 10px rgba(0,0,0,0.8);
+    position: absolute;
+    padding: 15px 20px 15px 15px ;
+    font-weight: lighter;
+    border-radius: 5px;
+}
+
+.dropdowns li {
+    list-style: none;
+    width: 110px;
+}
+
+.dropdowns a {
     text-decoration: none;
+    color: black;
+    width: 100%;
+}
+
+.dropdowns a:hover{
+    font-weight: bolder;
 }
 
 nav .login-signup {
@@ -88,7 +118,7 @@ nav .login-signup a:hover {
     flex-direction: column;
     justify-content: center;
     align-content: center;
-    margin-top: 5%;
+    margin-top: 3%;
     text-align: center;
 }
 
@@ -103,7 +133,7 @@ nav .login-signup a:hover {
     font-weight: lighter;
 }
 
-.description .button-group {
+.description .link-group {
     margin: 0 auto;
     width: 25%;
     display: flex;
@@ -111,23 +141,24 @@ nav .login-signup a:hover {
     padding: 3%;
 }
 
-.button-group button {
+.link-group a {
     width: 40%;
     padding: 2.2%;
     border-radius: 20px;
     border: 1px solid hsl(356, 100%, 66%);
     background-color: hsl(0, 0%, 100%);
-    color: hsl(356, 100%, 66%)
+    color: hsl(356, 100%, 66%);
+    text-decoration: none;
 }
 
-.button-group button:hover {
+.link-group a:hover {
     background-color:hsl(355, 100%, 74%);
     color: hsl(0, 0%, 100%);
     border: none;
     cursor: pointer;
 }
 
-.button-group button:last-child {
+.link-group a:last-child {
     width: 40%;
     padding: 2.2%;
     border-radius: 20px;
@@ -136,7 +167,7 @@ nav .login-signup a:hover {
     background-color: transparent
 }
 
-.button-group button:last-child:hover {
+.link-group a:last-child:hover {
     background-color:hsl(0, 0%, 100%);
     color: hsl(355, 100%, 74%);
     border: none;
