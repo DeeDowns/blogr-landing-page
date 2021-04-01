@@ -1,10 +1,21 @@
-import React from 'react'
+import React, { useState } from 'react'
 import blogrlogo from '../images/logo.svg'
-import iconArrow from '../images/icon-arrow-light.svg'
+import iconOpenArrow from '../images/icon-arrow-light.svg'
 import './Header.css';
+import { ProductDropdown, CompanyDropdown, ConnectDropdown } from './Dropdowns'
 
 const Header = () => {
+    const [dropdown, setDropdown] = useState({
+        product: false,
+        company: false,
+        connect: false
+    })
 
+
+    const toggle = event => {
+        console.log(event.target.id)
+        setDropdown({...dropdown, [event.target.id]: !dropdown[event.target.id]})
+    }
 
     return (
         <header>
@@ -12,25 +23,29 @@ const Header = () => {
                 <nav>
                     <img src={blogrlogo} alt='blogr logo' />
                     <div className='dropdowns'>
-                        <ul>Product <img src={iconArrow} alt='arrow' />
-                            <li><a href='#'>Overview</a></li>
-                            <li><a href='#'>Pricing</a></li>
-                            <li><a href='#'>Marketplace</a></li>
-                            <li><a href='#'>Features</a></li>
-                            <li><a href='#'>Integrations</a></li>
-                        </ul>
+                        <div className='dropdown-section'>
+                            <p id='product' onClick={toggle}>
+                                Product
+                                <img src={iconOpenArrow} alt='arrow' className={`${dropdown.product ? 'rotate' : ''}`} />
+                            </p>
+                            <ProductDropdown dropdown={dropdown}/>
+                        </div>
+                        
+                        <div className='dropdown-section'>
+                            <p id='company' onClick={toggle}>
+                                Company    
+                                <img src={iconOpenArrow} alt='arrow' className={`${dropdown.company ? 'rotate' : ''}`} />
+                            </p>
+                            <CompanyDropdown dropdown={dropdown} />
+                        </div>
 
-                        <ul>Company <img src={iconArrow} alt='arrow' />
-                            <li><a href='#'>About</a></li>
-                            <li><a href='#'>Team</a></li>
-                            <li><a href='#'>Blog</a></li>
-                            <li><a href='#'>Careers</a></li>
-                        </ul>
-
-                        <ul>Connect <img src={iconArrow} alt='arrow' />
-                            <li><a href='#'>Newsletter</a></li>
-                            <li><a href='#'>LinkedIn</a></li>
-                        </ul>
+                        <div className='dropdown-section'>
+                            <p id='connect' onClick={toggle}>
+                                Connect 
+                                <img src={iconOpenArrow} alt='arrow' className={`${dropdown.connect ? 'rotate' : ''}`} />
+                            </p>
+                            <ConnectDropdown dropdown={dropdown} />
+                        </div>
                     </div>
 
                     <div className='login-signup'>
@@ -41,9 +56,9 @@ const Header = () => {
                 <div className='description'> 
                     <h1>A modern publishing platform</h1>
                     <h2>Grow your audience and build your online brand</h2>
-                    <div className='button-group'>
-                        <button>Start for Free</button>
-                        <button>Learn More</button>
+                    <div className='link-group'>
+                        <a href='#'>Start for Free</a>
+                        <a href='#'>Learn More</a>
                     </div>
                 </div>
             </div>
